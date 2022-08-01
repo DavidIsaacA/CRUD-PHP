@@ -15,8 +15,21 @@ if(isset($_GET['id'])){
         $contraseña = $row['contraseña'];
         $descripcion = $row['descripcion'];
     }
+}
 
-   
+if(isset($_POST['update'])){
+    $id = $_GET['id'];
+    $nombre= $_POST['nombrerestaurante'];
+    $correo = $_POST['correo'];
+    $contraseña = $_POST['contraseña'];
+    $descripcion = $_POST['descripcion'];
+
+    $query = "UPDATE restaurante set nombrerestaurante='{$nombrerestaurante}', correo='{$correo}',contraseña='{$contraseña}',descripcion='{$descripcion}' 
+    WHERE idrestaurante= '{$id}'";
+
+    mysqli_query($con,$query);
+
+    header("Location: index.php");
 }
 ?>
 
@@ -39,7 +52,7 @@ if(isset($_GET['id'])){
                 <div class="form-group">
                     <textarea name="descripcion" id="" rows="2" class="form-control" value=""><?php echo $descripcion;?></textarea>
                 </div>
-                <input type="submit" class="btn btn-success btn-block" name="guardar" value="Editar">
+                <input type="submit" class="btn btn-success btn-block" name="update" value="Editar">
             </form> 
             </div>
         </div>
