@@ -19,6 +19,7 @@
         <a href="index.php" class="navbar-brand">PHP </a>
     </div>
     <div class="container">
+        <a href="index.php" class="navbar-brand">hola soy fernando</a>
         <a href="index.php" class="navbar-brand">hol soy david </a>
     </div>
 
