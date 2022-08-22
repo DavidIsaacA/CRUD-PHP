@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos</title>
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body >
+
+    <div class="container border border-secondary rounded " style="margin: 25px; margin-left: 7rem; background-color: rgba(206, 214, 228, 0.548);">
+        <form class="row" style="margin: 35px;" >
+            <div class="text-center align-items-center rounded" style="background-color: rgb(148, 148, 231);">
+                <h2 style="color: rgba(10, 10, 49, 0.849);">REGISTRO DE PRODUCTOS</h2>
+            </div>
+
+    
+            <div class="col-md-6 " style="width: 35rem; margin-top: 10px;">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreprod" > 
+            </div>
+
+            <div class="col-md-6" style="width: 20rem; margin-top: 10px;">
+                <label for="cod_producto" class="form-label">Codigo</label>
+                <input type="text" class="form-control" id="cod_producto" placeholder="xxx-xxxx-xx" disabled>
+            </div>
+
+            <div class="col-md-6" style="width: 35rem;">
+                
+                <label for="categoriap" class="form-label">Categoria</label>
+                <select id="categoriap" class="form-select">
+                <option>seleccione categoria...</option>
+                <option>Pantallas</option>
+                <option>Case</option>
+                <option>Mouse</option>
+                <option>Teclado</option>
+                <option>Procesador</option>
+                </select>  
+            </div>
+            
+
+            <div class="col-md-4" style="width: 20rem;">
+                <label for="stock" class="form-label">Stock</label>
+                <input class="form-control" id="stock" type="number" placeholder="0" disabled>
+            </div>
+
+            <div class="col-sm-12" style="width: 35rem;">
+                <label for="imagen" class="form-label">Imagen</label>
+                <input type="file" class="form-control" id="inputGroupFile01">
+            </div>
+
+            <div class="col-12">
+                <label for="descripcion" class="form-label">Descripcion</label>
+                <div class="textarea">
+                    <textarea class="form-control"  id="descrip" style="height: 100px"></textarea>
+                </div>
+            </div>
+            <div class="text-center" style="margin: 10px;">
+                <button class="btn bg-success text-white ">Guardar</button>
+                <button class="btn btn bg-danger text-white">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class=" border border-secondary rounded" style="margin: 25px; margin-left: 7rem;">
+        <table class='table table-bordered'>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+
+                
+                <tr>
+                    <td>nombre</td>
+                    <td>correo</td>
+                    <td>descripcion</td>
+                    <td>     
+                        <button class="btn btn bg-warning text-back">Modificar</button> 
+                        <button class="btn btn bg-danger text-white">Dar de baja</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </body>
+</html>
