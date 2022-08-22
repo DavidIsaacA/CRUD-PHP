@@ -38,7 +38,7 @@
                 <thead>
                     <tr>
                         <th>Nombre</th>
-                        <th>Correo</th>
+                        <th>Correo Hola SEÑORA</th>
                         <th>Descripción</th>
                         <th>Acciones</th>
                     </tr>
