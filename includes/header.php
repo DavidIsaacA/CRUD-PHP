@@ -19,7 +19,7 @@
         <a href="index.php" class="navbar-brand">PHP </a>
     </div>
     <div class="container">
-        <a href="index.php" class="navbar-brand">hola soy fer</a>
+        <a href="index.php" class="navbar-brand">hola soy fernando</a>
     </div>
 
 </nav>
